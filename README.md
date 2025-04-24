@@ -27,8 +27,6 @@ X_test, X_val, Y_test, Y_val = train_test_split(X_test, Y_test, train_size=0.5, 
 
 
 
-
-
 Se aplanaran las imagenes para lograr representar cada imagen en forma de vector.
 
 Se normalizaran los valores de las imagenes.
@@ -90,6 +88,14 @@ Shape del y_data : (5000, 10)
 ## Entrenamiento
 
 En el proceso de entrenamiento se utilizara una MLP, utilizando `softmax` en la output layer y `ReLu` en el resto de capas.
+
+Primero buscaremos entrenar la red de manera estandar.
+
+Buscaremos probar el rendimiento y posibles errores ante los siguientes escenarios:
+
+1- No normalizar las imagenes
+2- No aplicar `one-hot` sobre los targets
+3- Utilizar `one-hot` sobre los targets pero no utilizar `categorical_cross_entropy`
 
 ## Evaluacion
 
