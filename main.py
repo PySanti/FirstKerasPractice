@@ -24,7 +24,7 @@ net.add(layers.Dense(50, activation="relu"))
 net.add(layers.Dense(10, activation="softmax"))
 
 net.compile(
-    loss="crossentropy",
+    loss="categorical_crossentropy",
     optimizer="sgd",
     metrics=['accuracy', 'precision', 'recall']
 )

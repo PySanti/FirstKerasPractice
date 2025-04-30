@@ -230,3 +230,33 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^
 ValueError: Dimensions must be equal, but are 32 and 320 for '{{node LogicalAnd_1}} = LogicalAnd[](Tile_2, Greater)' with input shapes: [1,32], [1,320].
 ```
+
+### Usando sigmoid en lugar de relu
+
+Utilizando la misma cantidad de capas y neuronas, pero Sigmoid en lugar de relu, obtuvimos los siguientes resultados:
+
+```
+Epoch 1/10
+   1/1875 ━━━━━━━━━━━━━━━━━━━━ 21:33 690ms/step - accuracy: 0.0000e+00 - loss: 2.6573 - precision: 0.0000e+00 - recall: 0.  22/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0611 - loss: 2.4789 - precision: 0.0000e+00 - recall: 0.0000e+00 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 6s 3ms/step - accuracy: 0.1173 - loss: 2.3117 - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.1136 - val_loss: 2.2858 - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 2/10
+   1/1875 ━━━━━━━━━━━━━━━━━━━━ 37s 20ms/step - accuracy: 0.0938 - loss: 2.2849 - precision: 0.0000e+00 - recall: 0.0000e+0  24/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.1180 - loss: 2.2850 - precision: 0.0000e+00 - recall: 0.0000e+00 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.1570 - loss: 2.2801 - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.4866 - val_loss: 2.2545 - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 3/10
+   1/1875 ━━━━━━━━━━━━━━━━━━━━ 43s 23ms/step - accuracy: 0.5625 - loss: 2.2578 - precision: 0.0000e+00 - recall: 0.0000e+0  19/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.4620 - loss: 2.2605 - precision: 0.0000e+00 - recall: 0.0000e+00 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.3016 - loss: 2.2410 - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.3494 - val_loss: 2.1622 - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 4/10
+   1/1875 ━━━━━━━━━━━━━━━━━━━━ 45s 24ms/step - accuracy: 0.3438 - loss: 2.1395 - precision: 0.0000e+00 - recall: 0.0000e+0  24/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.3433 - loss: 2.1562 - precision: 0.0000e+00 - recall: 0.0000e+00 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.4435 - loss: 2.1059 - precision: 0.0661 - recall: 4.2043e-06 - val_accuracy: 0.5434 - val_loss: 1.8171 - val_precision: 1.0000 - val_recall: 0.0028
+Epoch 5/10
+   1/1875 ━━━━━━━━━━━━━━━━━━━━ 42s 23ms/step - accuracy: 0.5000 - loss: 1.8129 - precision: 0.0000e+00 - recall: 0.0000e+0  25/1875 ━━━━━━━━━━━━━━━━━━━━ 3s 2ms/step - accuracy: 0.5062 - loss: 1.8299 - precision: 0.7600 - recall: 0.0017         1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.5567 - loss: 1.6995 - precision: 0.9870 - recall: 0.0562 - val_accuracy: 0.6568 - val_loss: 1.3051 - val_precision: 0.9675 - val_recall: 0.2024
+Epoch 6/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.6575 - loss: 1.2194 - precision: 0.9568 - recall: 0.2438 - val_accuracy: 0.7152 - val_loss: 0.9922 - val_precision: 0.9379 - val_recall: 0.3626
+Epoch 7/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.7203 - loss: 0.9534 - precision: 0.9315 - recall: 0.4062 - val_accuracy: 0.7658 - val_loss: 0.8249 - val_precision: 0.9170 - val_recall: 0.5150
+Epoch 8/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.7704 - loss: 0.8053 - precision: 0.9160 - recall: 0.5348 - val_accuracy: 0.8016 - val_loss: 0.7043 - val_precision: 0.9103 - val_recall: 0.6372
+Epoch 9/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.8088 - loss: 0.6889 - precision: 0.9115 - recall: 0.6570 - val_accuracy: 0.8298 - val_loss: 0.6112 - val_precision: 0.9143 - val_recall: 0.7320
+Epoch 10/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.8293 - loss: 0.6128 - precision: 0.9083 - recall: 0.7313 - val_accuracy: 0.8468 - val_loss: 0.5457 - val_precision: 0.9087 - val_recall: 0.7764
+
+```
+
+Resultados considerablemente peores.
