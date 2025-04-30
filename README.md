@@ -214,3 +214,19 @@ ValueError: Arguments `target` and `output` must have the same rank (ndim). Rece
 ```
 
 
+### Sin usar categorical_cross_entropy sino cross_entropy
+
+Obtenemos el siguiente error:
+
+```
+Traceback (most recent call last):
+  File "/home/santiago/Escritorio/Aprendizaje ML/practicas/session9/FirstKerasPractice/main.py", line 33, in <module>
+    history = net.fit(      X_train, 
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/santiago/Escritorio/Aprendizaje ML/practicas/session9/FirstKerasPractice/dep/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/santiago/Escritorio/Aprendizaje ML/practicas/session9/FirstKerasPractice/dep/lib/python3.12/site-packages/keras/src/backend/tensorflow/numpy.py", line 1629, in logical_and
+    return tf.logical_and(x1, x2)
+           ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Dimensions must be equal, but are 32 and 320 for '{{node LogicalAnd_1}} = LogicalAnd[](Tile_2, Greater)' with input shapes: [1,32], [1,320].
+```
