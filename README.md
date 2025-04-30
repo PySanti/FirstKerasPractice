@@ -197,3 +197,20 @@ Epoch 10/10
 ```
 
 Como vemos, los resultados sin normalizar son infinitamente peores. Cosa a tener muy en cuenta para proyectos futuros.
+
+### Sin aplicar one-hot sobre el target
+
+Obtenemos el siguiente error:
+
+```
+  File "/home/santiago/Escritorio/Aprendizaje ML/practicas/session9/FirstKerasPractice/main.py", line 33, in <module>
+    history = net.fit(      X_train, 
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/santiago/Escritorio/Aprendizaje ML/practicas/session9/FirstKerasPractice/dep/lib/python3.12/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/santiago/Escritorio/Aprendizaje ML/practicas/session9/FirstKerasPractice/dep/lib/python3.12/site-packages/keras/src/backend/tensorflow/nn.py", line 653, in categorical_crossentropy
+    raise ValueError(
+ValueError: Arguments `target` and `output` must have the same rank (ndim). Received: target.shape=(32,), output.shape=(32, 10)
+```
+
+
