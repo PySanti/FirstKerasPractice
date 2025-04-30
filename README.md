@@ -172,3 +172,28 @@ Epoch 10/10
 ```
 
 ### Sin normalizar 
+
+```
+Epoch 1/10
+  22/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.1137 - loss: 135021685249350683946316201984.0000 - precision: 0.1  46/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.1142 - loss: nan - precision: 0.1033 - recall: 0.0484            1875/1875 ━━━━━━━━━━━━━━━━━━━━ 5s 2ms/step - accuracy: 0.1012 - loss: nan - precision: 0.1008 - recall: 0.0030 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 2/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.1007 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 3/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0961 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 4/10
+   1/1875 ━━━━━━━━━━━━━━━━━━━━ 43s 23ms/step - accuracy: 0.0000e+00 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+  25/1875 ━━━━━━━━━━━━━━━━━━━━ 3s 2ms/step - accuracy: 0.0744 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00    1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0991 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 5/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0988 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 6/10
+   1/1875 ━━━━━━━━━━━━━━━━━━━━ 41s 22ms/step - accuracy: 0.0000e+00 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+  24/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0808 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00    1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0978 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 7/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0973 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 8/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0975 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 9/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0965 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+Epoch 10/10
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.0984 - loss: nan - precision: 0.0000e+00 - recall: 0.0000e+00 - val_accuracy: 0.0980 - val_loss: nan - val_precision: 0.0000e+00 - val_recall: 0.0000e+00
+```
+
+Como vemos, los resultados sin normalizar son infinitamente peores. Cosa a tener muy en cuenta para proyectos futuros.
