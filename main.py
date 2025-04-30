@@ -33,5 +33,8 @@ net.compile(
 history = net.fit(      X_train, 
                         Y_train, 
                         epochs=10, 
-                        validation_data=(X_val, Y_val))
+                     validation_data=(X_val, Y_val))
+
+print("Rendimiento para test")
+loss, acc, prec, rec = net.evaluate(X_test, Y_test)
 

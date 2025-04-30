@@ -97,8 +97,6 @@ Buscaremos probar el rendimiento y posibles errores ante los siguientes escenari
 2- No aplicar `one-hot` sobre los targets
 3- Utilizar `one-hot` sobre los targets pero no utilizar `categorical_cross_entropy`
 4- Rendimiento utilizando `sigmoid` como funcion de activacion.
-5- Rendimiento utilizando +/- neuronas.
-6- Rendimiento utilizando +/- capas.
 
 ## Evaluacion
 
@@ -168,6 +166,12 @@ Epoch 9/10
 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.9776 - loss: 0.0773 - precision: 0.9820 - recall: 0.9738 - val_accuracy: 0.9718 - val_loss: 0.0928 - val_precision: 0.9758 - val_recall: 0.9668
 Epoch 10/10
 1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 2ms/step - accuracy: 0.9809 - loss: 0.0662 - precision: 0.9844 - recall: 0.9779 - val_accuracy: 0.9706 - val_loss: 0.0917 - val_precision: 0.9758 - val_recall: 0.9674
+
+```
+
+```
+Rendimiento para test
+157/157 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - accuracy: 0.9680 - loss: 0.0946 - precision: 0.9722 - recall: 0.9635 
 
 ```
 
